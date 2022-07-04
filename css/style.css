@@ -1,0 +1,298 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0%;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0%;
+    margin: 0%;
+}
+/* ===========================
+            nav-part start
+===============================*/
+.navbar-brand{
+    font-size: 55px;
+}
+nav{
+    background: transparent;
+ position: absolute !important;
+ top: 0;
+ left: 0;
+ z-index: 9999;
+ width: 100%;
+ padding: 30px 0;
+}
+nav ul li{
+    margin-left: 50px;
+}
+nav ul li .nav-link{
+    color: #e84393 !important;
+    transition: .5s;
+    position: relative;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+nav ul li .nav-link:after{
+    position: absolute;
+    bottom: 7px;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+   border: 5px solid #e84393;
+   border-width: 0 0 2px 2px;
+    content: "";
+    transition: .5s;
+    opacity: 0;
+}
+nav ul li .nav-link:before{
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+   border: 5px solid #e84393;
+   border-width: 2px 2px 0 0;
+    content: "";
+    transition: .5s;
+    opacity: 0;
+}
+nav ul li .nav-link:hover::after{
+    bottom: -5px;
+    left: -5px;
+    opacity: 1;
+}
+nav ul li .nav-link:hover::before{
+    top: -5px;
+    right: -5px;
+    opacity: 1;
+}
+nav ul li .nav-link:hover{
+    background: #e84393;
+    color: #fff !important;
+}
+
+nav a{
+    color: #e84393;
+   
+    transition: .5s;
+}
+nav a:hover{
+    color: #fff;
+}
+nav button{
+    color: #fff;
+    border-radius: 5px;
+    background: transparent;
+    padding: 5px;
+    border: none;
+}
+nav button:hover{
+    background: #e84393;
+    color: #fff;
+}
+/* ===========================
+            nav-part end
+===============================*/
+/* ===========================
+            banner-part start
+===============================*/
+.banner-part .banner{
+    background: url(../img/mine.jpg) no-repeat center;
+  background-size: cover;
+
+  position: relative;
+
+   
+}
+.banner-part .banner .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(7, 5, 5, 0.6);
+    padding: 200px 0;
+    text-align: center;
+}
+.banner-part .banner .overlay .img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #f70c6e;
+   margin: auto;
+   background: #000;
+}
+.banner-part .banner .overlay .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.banner-part h1{
+    color: #f70c6e;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Oxygen', sans-serif;
+    text-transform: uppercase;
+
+}
+.banner-part h2{
+    color: #fff;
+       font-size: 30px;
+    font-weight: 700;
+    font-family: 'Oxygen', sans-serif;
+    text-transform: uppercase;
+
+}
+.banner-part .type{
+    color: #f70c6e;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Oxygen', sans-serif;
+    text-transform: uppercase;
+
+}
+.banner-part h3{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 20px 0 3px 0;
+    font-family: 'Dancing Script', cursive;
+}
+.banner-part p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ===========================
+            banner-part end
+===============================*/
+/* ===========================
+            service-part start
+===============================*/
+/* ===========================
+        about-part start
+===============================*/
+#about-part{
+    padding: 50px 0;
+}
+#about-part .row{
+    justify-content: center;
+    position: relative;
+    z-index: 5;
+}
+#about-part h3{
+    color: #e84393;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Oxygen', sans-serif;
+}
+#about-part h5{
+  
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Oxygen', sans-serif;
+}
+#about-part p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 25px;
+    line-height: 25px;
+}
+#about-part .img{
+    width: 250px;
+    position: relative;
+    
+}
+#about-part .img img{
+    width: 100%; 
+}
+#about-part .img:after{
+   
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 95px;
+    height: 95px;
+   border: 5px solid #e84393;
+   border-width: 10px 0 0px 10px;
+    content: "";
+}
+#about-part .img:before{
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 95px;
+    height: 95px;
+    border: 5px solid #e84393;
+    border-width: 0px 10px 10px 0;
+    content: "";
+}
+
+
+/* ===========================
+        about-part end
+===============================*/
+#service-part{
+    margin: 20px 0;
+}
+#service-part .tittle{
+    text-align: center;
+}
+#service-part .tittle h1{
+    color: #f70c6e;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Oxygen', sans-serif;
+}
+#service-part .tittle p{
+    color: #000;
+    position: relative;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+#service-part .tittle p::after{
+    position: absolute;
+    top: 60%;
+    left: -55px;
+    width: 50px;
+    height: 3px;
+    background: #000;
+    content: "";
+    transition: .9s;
+}
+#service-part .tittle p::before{
+    position: absolute;
+    top: 60%;
+    right: -55px;
+    width: 50px;
+    height: 3px;
+    background: #000;
+    content: "";
+    transition: .9s;
+}
+/* ===========================
+            service-part end
+===============================*/
